@@ -58,7 +58,7 @@ public class DiscountCodeControllers extends HttpServlet {
                     discountEntity = dao.listDiscountCode();
                 } else if (action.equals("DELETE")) {
                     request.setAttribute("code",code);
-                    dao.deleteDiscountCode("code");
+                    dao.deleteDiscountCode(code);
                     discountEntity = dao.listDiscountCode();
                 }
             }

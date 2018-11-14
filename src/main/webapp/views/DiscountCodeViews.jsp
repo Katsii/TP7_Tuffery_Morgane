@@ -1,7 +1,7 @@
 <%-- 
     Document   : DiscountCodeViews
-    Created on : 7 nov. 2018, 14:12:11
-    Author     : pierr
+    Created on : 7 nov. 2018, 14:10:11
+    Author     : Morgane
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Saisie d'un taux de remise</title>
+        <title>TP7</title>
     </head>
     <body>
         <h1>Edition des taux de remise</h1>
@@ -25,7 +25,7 @@
             <c:otherwise> <%-- On a trouvé --%>
                 <%--On fait un formulaire pour y ajouter un code --%>
                 <form method="GET">
-                    Code promo :  <input name="code" size="1" maxlength="1" pattern="[A-Z]{1}+" title="Une lettre en MAJUSCULES">
+                    Code :  <input name="code" size="1" maxlength="1" pattern="[A-Z]{1}+" title="Une lettre en MAJUSCULES">
                     Valeur : <input name="taux" type="number" step="0.01" min="0.0" max="99.99" size="5"><br/>
                     <input type="hidden" name="action" value="ADD">
                     <input type="submit" value="Ajouter">
